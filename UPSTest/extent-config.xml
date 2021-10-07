@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+  <configuration>
+    <theme>dark</theme>
+  
+    <encoding>UTF-8</encoding>
+    
+    <protocol>https</protocol>
+    
+    <documentTitle>UPS Automation</documentTitle>
+    
+    <reportName>UPS Extent Report </reportName>
+    
+    <dateFormat>yyyy-MM-dd</dateFormat>
+    
+    <timeFormat>HH:mm:ss</timeFormat>
+    
+    <scripts>
+      <![CDATA[
+        $(document).ready(function() {
+        
+        });
+        reportConfigPath=extent-config.xml
+      ]]>
+    </scripts>
+    
+    <styles>
+      <![CDATA[
+        
+      ]]>
+    </styles>
+  </configuration>
+</extentreports>

@@ -1,0 +1,12 @@
+---
+com:
+  ups:
+    platform-url: "${TEST_URL:}"
+    authz:
+      base-url: "${BASEURL:}"
+    authentication:
+      admin_password: "${ADMINPASSWORD:admin}"
+      admin_user: "${ADMINUSER:admin}"
+    common:
+      browser: "${BROWSER:Chrome}"
+    users: "upsAutoUser1:upsAutoUser1Pass@123"
