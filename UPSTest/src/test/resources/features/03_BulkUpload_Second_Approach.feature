@@ -11,7 +11,7 @@ Feature: Automation Scenarios for Bulk Upload feature test for Equipment page.
     Given User Select multiple record with rowNumbers=<rowNumbers>
     And User Click "Update D&D details" button
     Then Verify "Update D&D details" page Should get displayed
-    Then Verify "Save" button is enabled
+    And Verify "Save" button is enabled
     Given User click dropdown "Demurrage"
     And Select dropdown "<dropDownName1>" with Values "<dropDownValue1>"
     And Select dropdown "<dropDownName2>" with Values "<dropDownValue2>"

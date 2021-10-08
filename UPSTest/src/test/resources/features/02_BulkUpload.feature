@@ -17,20 +17,20 @@ Feature: Automation Scenarios for Bulk Upload feature test for Equipment page.
     Given User Select multiple record with rowNumbers=1
     And User Click "Update D&D details" button
     Then Verify "Update D&D details" page Should get displayed
-    Then Verify "Gate out port" field for section "Demurrage" should get displayed
-    Then Verify "Number of days demurrage" field for section "Demurrage" should get displayed
-    Then Verify "Reason Code" field for section "Demurrage" should get displayed
-    Then Verify "Responsible" field for section "Demurrage"  should get displayed
+    And Verify "Gate out port" field for section "Demurrage" should get displayed
+    And Verify "Number of days demurrage" field for section "Demurrage" should get displayed
+    And Verify "Reason Code" field for section "Demurrage" should get displayed
+    And Verify "Responsible" field for section "Demurrage"  should get displayed
 
-    Then Verify "Update D&D details" page Should get displayed
-    Then Verify "Gate out port" field for section "Detention" should get displayed
-    Then Verify "Number of days demurrage" field for section "Detention" should get displayed
-    Then Verify "Reason Code" field for section "Detention" should get displayed
-    Then Verify "Responsible" field for section "Detention"  should get displayed
+    And Verify "Update D&D details" page Should get displayed
+    And Verify "Gate out port" field for section "Detention" should get displayed
+    And Verify "Number of days demurrage" field for section "Detention" should get displayed
+    And Verify "Reason Code" field for section "Detention" should get displayed
+    And Verify "Responsible" field for section "Detention"  should get displayed
 
-    Then Verify "Comment" field should get displayed
-    Then Verify "Cancel" field should get displayed
-    Then Verify "Save" field should get displayed
+    And Verify "Comment" field should get displayed
+    And Verify "Cancel" field should get displayed
+    And Verify "Save" field should get displayed
 
   @Update_D&D_details @negative
   Scenario: [UPS-04] : Verify User should not be able to perform bulk upload operation for dropdown Demurrage/Detention = blank/unselected
@@ -40,7 +40,7 @@ Feature: Automation Scenarios for Bulk Upload feature test for Equipment page.
     Given User Select multiple record with rowNumbers=2,4,6
     And User Click "Update D&D details" button
     Then Verify "Update D&D details" page Should get displayed
-    Then Verify "Save" button is enabled
+    And Verify "Save" button is enabled
     And User Click "Save" button
     Then Verify "No record is updated for black values for dropdown Demurrage/Detention" message
 
